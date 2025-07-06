@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const Login = ({ onLogin }) => {
     const [username, setUsername] = useState('');
 
-    const handleLogin = () => {
+    const handleLogin = (e) => {
         e.preventDefault();
         if (username.trim()) {
             localStorage.setItem('username', username);

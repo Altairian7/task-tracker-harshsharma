@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-const TaskItem = ({ task, onToggleComplete, onDelete, onEdit }) => {
+const TaskItem = ({ task, onToggle, onDelete, onEdit }) => {
     const [isEditing, setIsEditing] = useState(false);
     const [editedTitle, setEditedTitle] = useState(task.title);
     const [editedDescription, setEditedDescription] = useState(task.description);
@@ -17,8 +17,8 @@ const TaskItem = ({ task, onToggleComplete, onDelete, onEdit }) => {
     };
 
     const handleCancel = () => {
-        setEditTitle(task.title);
-        setEditDescription(task.description);
+        setEditedTitle(task.title);
+        setEditedDescription(task.description);
         setIsEditing(false);
     };
 
@@ -52,11 +52,11 @@ const TaskItem = ({ task, onToggleComplete, onDelete, onEdit }) => {
                         <input
                             type="checkbox"
                             checked={task.completed}
-                            onChange={() => onToggleComplete(task.id)}
+                            onChange={() => onToggle(task.id)}
                         />
                         <h3>{task.title}</h3>                            
                         </div>
-                        {task.description && <p>{formatData(Task.createdAT)}</p>}
+                        {task.description && <p>{formatDate(task.createdAT)}</p>}
                         <div className='task-metadata'>
                             <span className='task-date'>{formatDate(task.createdAt)}</span>
                             <div className='task-actions'>

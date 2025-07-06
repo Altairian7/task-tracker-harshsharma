@@ -5,6 +5,7 @@ import TaskList from './components/TaskList';
 import TaskFilter from './components/TaskFilter';
 import { saveToLocalStorage, getFromLocalStorage, removeFromLocalStorage } from './utils/localStorage';
 
+import './styles/App.css';
 
 
 const App = () => {
