@@ -61,12 +61,14 @@ const TaskItem = ({ task, onToggleComplete, onDelete, onEdit }) => {
                             <span className='task-date'>{formatDate(task.createdAt)}</span>
                             <div className='task-actions'>
                                 <button onClick={() => setIsEditing(true)}>Edit</button>
-                                <button onAbort={ 
+                                <button 
+                                    onClick={ () => { 
                                     if (window.confirm('Are you sure you want to delete this task sir???')) 
                                     onDelete(task.id); 
                                 }
-                            }} 
-                            className="delete-button"> detete</button>
+                            } 
+                            className="delete-button"
+                            > detete</button>
                             </div>
                             </div>
                 </div>
