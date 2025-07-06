@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# Personal Task Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A clean, no-nonsense task tracker app built with React. Created as part of an intern pre-hire assignment to showcase solid frontend fundamentals, component design, and the ability to actually ship something that works.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## What This Is
 
-### `npm start`
+It's a simple task tracker. You log in with a name (no passwords or fancy auth), then you're taken to a dashboard where you can:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Add tasks (title required, description optional)
+- Edit or delete them (with confirmation)
+- Mark them as done or not done
+- Filter them (all, completed, pending)
+- See when each task was created
+- And most importantly — your tasks don’t magically disappear after refresh
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Everything is stored in localStorage, because we keep it simple and functional.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Why I Built It This Way
 
-### `npm run build`
+This isn’t over-engineered with Redux or bloated UI libraries. It’s just React (functional components + hooks), styled with clean CSS, and designed to run smoothly on both desktop and mobile. You don’t need a manual to use it — and that’s kind of the point.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How to Run It
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repo  
+   `git clone https://github.com/your-username/task-tracker.git && cd task-tracker`
 
-### `npm run eject`
+2. Install dependencies  
+   `npm install`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Start the app  
+   `npm start`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Go to `http://localhost:3000`  
+   Login with any name. You're in.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Tech Used
 
-## Learn More
+- React.js (of course)
+- CSS for styling
+- localStorage to keep your data safe from page refreshes
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+No external state managers. No overkill. Just React doing what it does best.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Extra Features (If You're Into That)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+I kept the core clean, but here’s what you *could* add (or maybe I already did):
 
-### Analyzing the Bundle Size
+- Search bar to find tasks quickly
+- Priority levels (because not all tasks are born equal)
+- Due dates (for the organized ones)
+- Smooth transitions (for the aesthetic folks)
+- Dark mode (because light mode isn’t for everyone)
+- Tags or categories to sort chaos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
